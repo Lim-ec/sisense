@@ -49,9 +49,19 @@
                     {
                         "format": {
                             "color": {
-                                "color": "#bfbfbf",
-                                "isHandPickedColor": true,
-                                "type": "color"
+                                "conditions": [
+                                    {
+                                        "color": "#ffab03",
+                                        "expression": "3",
+                                        "operator": "<"
+                                    },
+                                    {
+                                        "color": "#00a5b8",
+                                        "expression": "0",
+                                        "operator": "≥"
+                                    }
+                                ],
+                                "type": "condition"
                             },
                             "mask": {
                                 "abbreviations": {
@@ -154,10 +164,10 @@
             "format": "bullets",
             "labels": [
                 {
-                    "id": "dong",
-                    "plural": "dong",
-                    "singular": "dong",
-                    "title": "dong"
+                    "id": "행정동",
+                    "plural": "행정동",
+                    "singular": "행정동",
+                    "title": "행정동"
                 },
                 {
                     "id": "category",
@@ -238,6 +248,6 @@
         }
     },
     "subtype": "column/classic",
-    "title": "따릉이 대여소 개수 (차트)",
+    "title": "따릉이 대여소 개수 (git test- title 변경)",
     "type": "chart/column"
 }
