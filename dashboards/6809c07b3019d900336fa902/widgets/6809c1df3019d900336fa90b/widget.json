@@ -1,0 +1,200 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6809c07b3019d900336fa902",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aDobongIAAaLQAaIAAabike",
+        "fullname": "localhost/Dobong - bike",
+        "id": "localhost_aDobongIAAaLQAaIAAabike",
+        "live": false,
+        "title": "Dobong - bike"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[도봉구 동 정보.legal_dong]",
+                            "index": 0
+                        },
+                        "format": {
+                            "subtotal": true
+                        },
+                        "instanceid": "F16F7-B269-FA",
+                        "jaql": {
+                            "column": "legal_dong",
+                            "datatype": "text",
+                            "dim": "[도봉구 동 정보.legal_dong]",
+                            "merged": true,
+                            "table": "도봉구 동 정보",
+                            "title": "법정동"
+                        },
+                        "panel": "rows"
+                    },
+                    {
+                        "field": {
+                            "id": "[도봉구 동 정보.dong]",
+                            "index": 1
+                        },
+                        "instanceid": "2E7B0-126C-41",
+                        "jaql": {
+                            "column": "dong",
+                            "datatype": "text",
+                            "dim": "[도봉구 동 정보.dong]",
+                            "merged": true,
+                            "table": "도봉구 동 정보",
+                            "title": "행정동"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "rows"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[도봉구 시설물 위치 정보.id]_count",
+                            "index": 2
+                        },
+                        "format": {
+                            "color": {
+                                "type": "color"
+                            },
+                            "mask": {
+                                "b": true,
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "t": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "60593-6D5B-5A",
+                        "jaql": {
+                            "agg": "count",
+                            "column": "id",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 시설물 위치 정보.id]",
+                            "merged": true,
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "따릉이대여소 개수"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "columns"
+            },
+            {
+                "items": [
+                    {
+                        "instanceid": "7598B-4A58-A7",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "category",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aDobongIAAaLQAaIAAabike",
+                                "fullname": "localhost/Dobong - bike",
+                                "id": "localhost_aDobongIAAaLQAaIAAabike",
+                                "live": false,
+                                "title": "Dobong - bike"
+                            },
+                            "datatype": "text",
+                            "dim": "[도봉구 시설물 위치 정보.category]",
+                            "dimension": "[도봉구 동 정보.dong]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "자전거 대여소"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "locale": "ko-kr",
+                            "merged": true,
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "category"
+                        },
+                        "panel": "scope"
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6809c1df3019d900336fa90b",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "drillToAnywhere": true,
+        "imageColumns": [
+        ],
+        "selector": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "automaticHeight": true,
+        "colors": {
+            "columns": false,
+            "headers": false,
+            "members": false,
+            "rows": true,
+            "totals": false
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "행정동",
+                    "plural": "행정동",
+                    "singular": "행정동",
+                    "title": "행정동"
+                },
+                {
+                    "id": "legal_dong",
+                    "plural": "legal_dong",
+                    "singular": "legal_dong",
+                    "title": "legal_dong"
+                },
+                {
+                    "id": "category",
+                    "plural": "category",
+                    "singular": "category",
+                    "title": "category"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "pageSize": 25,
+        "rowsGrandTotal": true,
+        "scroll": false
+    },
+    "subtype": "pivot2",
+    "title": "따릉이 대여소 개수 (피벗)",
+    "type": "pivot2"
+}

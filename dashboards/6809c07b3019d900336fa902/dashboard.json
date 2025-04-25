@@ -1,0 +1,40 @@
+{
+    "dataExploration": false,
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aDobongIAAaLQAaIAAabike",
+        "fullname": "localhost/Dobong - bike",
+        "id": "localhost_aDobongIAAaLQAaIAAabike",
+        "live": false,
+        "title": "Dobong - bike"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "6809c07b3019d900336fa902",
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "title": "Following Guide",
+    "widgets": [
+        "./widgets/6809c1db3019d900336fa909/widget.json",
+        "./widgets/6809c1df3019d900336fa90b/widget.json",
+        "./widgets/6809c5143019d900336fa913/widget.json",
+        "./widgets/6809c73e3019d900336fa91a/widget.json"
+    ]
+}
