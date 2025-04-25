@@ -248,6 +248,6 @@
         }
     },
     "subtype": "column/classic",
-    "title": "따릉이 대여소 개수 (차트)",
+    "title": "따릉이 대여소 개수 (sisense에서 수정 Test)",
     "type": "chart/column"
 }
