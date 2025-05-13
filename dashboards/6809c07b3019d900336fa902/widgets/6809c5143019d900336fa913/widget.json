@@ -1,0 +1,298 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6809c07b3019d900336fa902",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aDobongIAAaLQAaIAAabike",
+        "fullname": "localhost/Dobong - bike",
+        "id": "localhost_aDobongIAAaLQAaIAAabike",
+        "live": false,
+        "title": "Dobong - bike"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[도봉구 따릉이 대여/반납 시간별/보관소별 통계.timestamp (Calendar)]_days",
+                            "index": 0
+                        },
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/yyyy HH:mm",
+                                "days": "yyyy/MM/dd",
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "EBD92-D41E-81",
+                        "jaql": {
+                            "column": "timestamp",
+                            "datatype": "datetime",
+                            "dim": "[도봉구 따릉이 대여/반납 시간별/보관소별 통계.timestamp (Calendar)]",
+                            "level": "days",
+                            "merged": true,
+                            "table": "도봉구 따릉이 대여/반납 시간별/보관소별 통계",
+                            "title": "Days - timestamp"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "x-axis"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#ab504c",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "AEA7A-7350-8F",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "total_rentals",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 따릉이 대여/반납 시간별/보관소별 통계.total_rentals]",
+                            "table": "도봉구 따릉이 대여/반납 시간별/보관소별 통계",
+                            "title": "대여"
+                        },
+                        "panel": "measures"
+                    },
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#5cb747",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "B1607-8171-80",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "total_returns",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 따릉이 대여/반납 시간별/보관소별 통계.total_returns]",
+                            "table": "도봉구 따릉이 대여/반납 시간별/보관소별 통계",
+                            "title": "반납"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "break by"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/yyyy HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "instanceid": "392E2-2142-FF",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "timestamp",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aDobongIAAaLQAaIAAabike",
+                                "fullname": "localhost/Dobong - bike",
+                                "id": "localhost_aDobongIAAaLQAaIAAabike",
+                                "live": false,
+                                "title": "Dobong - bike"
+                            },
+                            "datatype": "datetime",
+                            "dim": "[도봉구 따릉이 대여/반납 시간별/보관소별 통계.timestamp (Calendar)]",
+                            "dimension": "[도봉구 따릉이 대여/반납 시간별/보관소별 통계.timestamp (Calendar)]",
+                            "filter": {
+                                "isNotCurrentPeriod": true,
+                                "last": {
+                                    "count": 6,
+                                    "offset": 1
+                                },
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "level": "months",
+                            "locale": "ko-kr",
+                            "merged": true,
+                            "table": "도봉구 따릉이 대여/반납 시간별/보관소별 통계",
+                            "title": "Months - timestamp"
+                        },
+                        "panel": "scope"
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6809c5143019d900336fa913",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillToAnywhere": true,
+        "previousScrollerLocation": {
+            "max": null,
+            "min": null
+        },
+        "selector": true,
+        "triggersDomready": true
+    },
+    "style": {
+        "dataLimits": {
+            "categoriesCapacity": 100000,
+            "seriesCapacity": 50
+        },
+        "legend": {
+            "enabled": true,
+            "position": "bottom"
+        },
+        "lineWidth": {
+            "width": "thin"
+        },
+        "markers": {
+            "enabled": false,
+            "fill": "filled",
+            "size": "small"
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "days_-_timestamp",
+                    "plural": "Days - timestamp",
+                    "singular": "Days - timestamp",
+                    "title": "Days - timestamp"
+                },
+                {
+                    "id": "months_-_timestamp",
+                    "plural": "Months - timestamp",
+                    "singular": "Months - timestamp",
+                    "title": "Months - timestamp"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "navigator": {
+            "enabled": true
+        },
+        "seriesLabels": {
+            "enabled": false,
+            "rotation": 0
+        },
+        "xAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "isIntervalEnabled": false,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "ticks": true,
+            "title": {
+                "enabled": false
+            },
+            "x2Title": {
+                "enabled": false
+            }
+        },
+        "y2Axis": {
+            "enabled": true,
+            "gridLines": false,
+            "inactive": true,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        },
+        "yAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "inactive": false,
+            "intervalJumps": 1000,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        }
+    },
+    "subtype": "line/basic",
+    "title": "대여/반납 횟수 (라인)",
+    "type": "chart/line"
+}

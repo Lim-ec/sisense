@@ -1,0 +1,243 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6809c07b3019d900336fa902",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aDobongIAAaLQAaIAAabike",
+        "fullname": "localhost/Dobong - bike",
+        "id": "localhost_aDobongIAAaLQAaIAAabike",
+        "live": false,
+        "title": "Dobong - bike"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[도봉구 동 정보.dong]",
+                            "index": 0
+                        },
+                        "instanceid": "2E7B0-126C-41",
+                        "jaql": {
+                            "column": "dong",
+                            "datatype": "text",
+                            "dim": "[도봉구 동 정보.dong]",
+                            "merged": true,
+                            "table": "도봉구 동 정보",
+                            "title": "행정동"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "categories"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#ffab03",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "60593-6D5B-5A",
+                        "jaql": {
+                            "agg": "count",
+                            "column": "id",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 시설물 위치 정보.id]",
+                            "merged": true,
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "따릉이대여소 개수"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "break by"
+            },
+            {
+                "items": [
+                    {
+                        "instanceid": "7598B-4A58-A7",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "category",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aDobongIAAaLQAaIAAabike",
+                                "fullname": "localhost/Dobong - bike",
+                                "id": "localhost_aDobongIAAaLQAaIAAabike",
+                                "live": false,
+                                "title": "Dobong - bike"
+                            },
+                            "datatype": "text",
+                            "dim": "[도봉구 시설물 위치 정보.category]",
+                            "dimension": "[도봉구 동 정보.dong]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "자전거 대여소"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "locale": "ko-kr",
+                            "merged": true,
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "category"
+                        },
+                        "panel": "scope"
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6809c1db3019d900336fa909",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "drillToAnywhere": true,
+        "previousScrollerLocation": {
+            "max": null,
+            "min": null
+        },
+        "selector": true,
+        "triggersDomready": true
+    },
+    "style": {
+        "dataLimits": {
+            "categoriesCapacity": 100000,
+            "seriesCapacity": 50
+        },
+        "legend": {
+            "enabled": false,
+            "position": "bottom"
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "행정동",
+                    "plural": "행정동",
+                    "singular": "행정동",
+                    "title": "행정동"
+                },
+                {
+                    "id": "category",
+                    "plural": "category",
+                    "singular": "category",
+                    "title": "category"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "navigator": {
+            "enabled": true
+        },
+        "seriesLabels": {
+            "enabled": true,
+            "labels": {
+                "enabled": false,
+                "stacked": false,
+                "stackedPercentage": false,
+                "types": {
+                    "count": false,
+                    "percentage": false,
+                    "relative": false,
+                    "totals": false
+                }
+            },
+            "rotation": 0
+        },
+        "xAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "isIntervalEnabled": false,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "ticks": true,
+            "title": {
+                "enabled": false
+            },
+            "x2Title": {
+                "enabled": false
+            }
+        },
+        "y2Axis": {
+            "enabled": true,
+            "gridLines": false,
+            "hideMinMax": false,
+            "inactive": true,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        },
+        "yAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "hideMinMax": false,
+            "inactive": false,
+            "intervalJumps": 2,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        }
+    },
+    "subtype": "column/classic",
+    "title": "따릉이 대여소 개수 (git test- title 변경)",
+    "type": "chart/column"
+}

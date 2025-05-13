@@ -1,0 +1,173 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "680f037b3019d900336fabe8",
+    "datasource": {
+        "fullname": "live:test1",
+        "id": "live:test1",
+        "live": true,
+        "title": "test1"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "instanceid": "50C72-C9B6-3D",
+                        "jaql": {
+                            "column": "lat_value",
+                            "datatype": "numeric",
+                            "dim": "[tb_tunnel_bridge_device_data.lat_value]",
+                            "table": "tb_tunnel_bridge_device_data",
+                            "title": "lat_value"
+                        }
+                    },
+                    {
+                        "instanceid": "0901C-ECDB-E0",
+                        "jaql": {
+                            "column": "lng_value",
+                            "datatype": "numeric",
+                            "dim": "[tb_tunnel_bridge_device_data.lng_value]",
+                            "table": "tb_tunnel_bridge_device_data",
+                            "title": "lng_value"
+                        }
+                    }
+                ],
+                "name": "geo"
+            },
+            {
+                "items": [
+                ],
+                "name": "color"
+            },
+            {
+                "items": [
+                ],
+                "name": "size"
+            },
+            {
+                "items": [
+                ],
+                "name": "details"
+            },
+            {
+                "items": [
+                    {
+                        "instanceid": "DD835-E053-7C",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "device_id",
+                            "datasource": {
+                                "fullname": "live:test1",
+                                "id": "live:test1",
+                                "live": true,
+                                "title": "test1"
+                            },
+                            "datatype": "text",
+                            "dim": "[tb_tunnel_bridge_device_data.device_id]",
+                            "dimension": "[tb_tunnel_bridge_device_data.lng_value]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "NFT001",
+                                    "NFT002",
+                                    "NFT003",
+                                    "NFT004",
+                                    "NFT005",
+                                    "NFT006"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "locale": "ko-kr",
+                            "merged": true,
+                            "table": "tb_tunnel_bridge_device_data",
+                            "title": "device_id"
+                        }
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "680f0ed53019d900336fabf0",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "disallowSelector": false,
+        "selector": true,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "markers": {
+            "fill": "filled",
+            "size": {
+                "defaultSize": 1,
+                "highest": 42,
+                "inactive": true,
+                "lowest": 1,
+                "max": 24,
+                "min": 4,
+                "step": 1
+            }
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "lat_value",
+                    "plural": "lat_value",
+                    "singular": "lat_value",
+                    "title": "lat_value"
+                },
+                {
+                    "id": "lng_value",
+                    "plural": "lng_value",
+                    "singular": "lng_value",
+                    "title": "lng_value"
+                },
+                {
+                    "id": "device_id",
+                    "plural": "device_id",
+                    "singular": "device_id",
+                    "title": "device_id"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "widgetDesign": {
+            "widgetBackgroundColor": "#FFFFFF",
+            "widgetBorderColor": "#9EA2AB",
+            "widgetBorderEnabled": false,
+            "widgetCornerRadius": "none",
+            "widgetShadow": "none",
+            "widgetSpacing": "small",
+            "widgetTitleAlignment": "left",
+            "widgetTitleBackgroundColor": "#ffffff",
+            "widgetTitleColor": "#5B6372",
+            "widgetTitleDividerColor": "#5B6372",
+            "widgetTitleDividerEnabled": false
+        }
+    },
+    "subtype": "map/scatter",
+    "title": "",
+    "type": "map/scatter"
+}

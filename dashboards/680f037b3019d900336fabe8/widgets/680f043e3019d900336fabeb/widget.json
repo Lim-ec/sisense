@@ -1,0 +1,271 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "680f037b3019d900336fabe8",
+    "datasource": {
+        "fullname": "live:test1",
+        "id": "live:test1",
+        "live": true,
+        "title": "test1"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[Query_1_1745813431987.device_id]",
+                            "index": 0
+                        },
+                        "instanceid": "1820A-3867-92",
+                        "jaql": {
+                            "column": "device_id",
+                            "datatype": "text",
+                            "dim": "[Query_1_1745813431987.device_id]",
+                            "merged": true,
+                            "table": "Query_1_1745813431987",
+                            "title": "device_id"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "categories"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[Query_1_1745813431987.person_total_cnt]_sum",
+                            "index": 1
+                        },
+                        "format": {
+                            "color": {
+                                "color": "#ffc36c",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "312AB-48CA-46",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "person_total_cnt",
+                            "datatype": "numeric",
+                            "dim": "[Query_1_1745813431987.person_total_cnt]",
+                            "table": "Query_1_1745813431987",
+                            "title": "터널 통행 인구"
+                        },
+                        "panel": "measures"
+                    },
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#b4b4f9",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "07457-CCC2-2D",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "total_car_cnt",
+                            "datatype": "numeric",
+                            "dim": "[Query_1_1745813431987.total_car_cnt]",
+                            "table": "Query_1_1745813431987",
+                            "title": "터널 통행 차량"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "break by"
+            },
+            {
+                "items": [
+                    {
+                        "instanceid": "FFB7C-1C70-8C",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "device_id",
+                            "datasource": {
+                                "fullname": "live:test1",
+                                "id": "live:test1",
+                                "live": true,
+                                "title": "test1"
+                            },
+                            "datatype": "text",
+                            "dim": "[Query_1_1745813431987.device_id]",
+                            "dimension": "[Query_1_1745813431987.device_id]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "NFT001",
+                                    "NFT002",
+                                    "NFT003",
+                                    "NFT004",
+                                    "NFT005",
+                                    "NFT006"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "locale": "ko-kr",
+                            "merged": true,
+                            "table": "Query_1_1745813431987",
+                            "title": "device_id"
+                        },
+                        "panel": "scope"
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "680f043e3019d900336fabeb",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillToAnywhere": true,
+        "previousScrollerLocation": {
+            "max": null,
+            "min": null
+        },
+        "selector": true,
+        "triggersDomready": true
+    },
+    "style": {
+        "dataLimits": {
+            "categoriesCapacity": 100000,
+            "seriesCapacity": 50
+        },
+        "legend": {
+            "enabled": true,
+            "position": "top"
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "device_id",
+                    "plural": "device_id",
+                    "singular": "device_id",
+                    "title": "device_id"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "navigator": {
+            "enabled": true
+        },
+        "seriesLabels": {
+            "enabled": false,
+            "labels": {
+                "enabled": false,
+                "stacked": false,
+                "stackedPercentage": false,
+                "types": {
+                    "count": false,
+                    "percentage": false,
+                    "relative": false,
+                    "totals": false
+                }
+            },
+            "rotation": 0
+        },
+        "xAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "isIntervalEnabled": false,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "ticks": true,
+            "title": {
+                "enabled": false
+            },
+            "x2Title": {
+                "enabled": false
+            }
+        },
+        "y2Axis": {
+            "enabled": true,
+            "gridLines": false,
+            "hideMinMax": false,
+            "inactive": true,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        },
+        "yAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "hideMinMax": false,
+            "inactive": false,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        }
+    },
+    "subtype": "column/classic",
+    "title": "",
+    "type": "chart/column"
+}

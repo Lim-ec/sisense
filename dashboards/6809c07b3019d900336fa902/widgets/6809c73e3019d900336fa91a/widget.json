@@ -1,0 +1,225 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6809c07b3019d900336fa902",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aDobongIAAaLQAaIAAabike",
+        "fullname": "localhost/Dobong - bike",
+        "id": "localhost_aDobongIAAaLQAaIAAabike",
+        "live": false,
+        "title": "Dobong - bike"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "instanceid": "FC1D2-8DDD-74",
+                        "jaql": {
+                            "column": "latitude",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 시설물 위치 정보.latitude]",
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "latitude"
+                        }
+                    },
+                    {
+                        "instanceid": "D0E0D-F77B-6C",
+                        "jaql": {
+                            "column": "longitude",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 시설물 위치 정보.longitude]",
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "longitude"
+                        }
+                    }
+                ],
+                "name": "geo"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "conditions": [
+                                    {
+                                        "color": "#ff0000",
+                                        "expression": "1132052100",
+                                        "operator": "="
+                                    },
+                                    {
+                                        "color": "#ffab03",
+                                        "expression": "1132052200",
+                                        "operator": "="
+                                    },
+                                    {
+                                        "color": "#ffff01",
+                                        "expression": "1132069000",
+                                        "operator": "="
+                                    },
+                                    {
+                                        "color": "#00a808",
+                                        "expression": "1132070000",
+                                        "operator": "="
+                                    },
+                                    {
+                                        "color": "#00cee6",
+                                        "expression": "1132071000",
+                                        "operator": "="
+                                    },
+                                    {
+                                        "color": "#fbb755",
+                                        "expression": "1132066000",
+                                        "operator": "="
+                                    },
+                                    {
+                                        "color": "#696992",
+                                        "expression": "1132067000",
+                                        "operator": "="
+                                    }
+                                ],
+                                "type": "condition"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": false,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "94EE5-2ACD-12",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "dong_code",
+                            "datatype": "numeric",
+                            "dim": "[도봉구 동 정보.dong_code]",
+                            "table": "도봉구 동 정보",
+                            "title": "Total dong_code"
+                        }
+                    }
+                ],
+                "name": "color"
+            },
+            {
+                "items": [
+                ],
+                "name": "size"
+            },
+            {
+                "items": [
+                ],
+                "name": "details"
+            },
+            {
+                "items": [
+                    {
+                        "instanceid": "EED5B-2B43-F4",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "category",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aDobongIAAaLQAaIAAabike",
+                                "fullname": "localhost/Dobong - bike",
+                                "id": "localhost_aDobongIAAaLQAaIAAabike",
+                                "live": false,
+                                "title": "Dobong - bike"
+                            },
+                            "datatype": "text",
+                            "dim": "[도봉구 시설물 위치 정보.category]",
+                            "dimension": "[도봉구 시설물 위치 정보.longitude]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "자전거 대여소"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "locale": "ko-kr",
+                            "merged": true,
+                            "table": "도봉구 시설물 위치 정보",
+                            "title": "category"
+                        }
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6809c73e3019d900336fa91a",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "disallowSelector": false,
+        "selector": true,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "script": "./script.js",
+    "style": {
+        "markers": {
+            "fill": "filled",
+            "size": {
+                "defaultSize": 1,
+                "highest": 42,
+                "inactive": true,
+                "lowest": 1,
+                "max": 24,
+                "min": 4,
+                "step": 1
+            }
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "latitude",
+                    "plural": "latitude",
+                    "singular": "latitude",
+                    "title": "latitude"
+                },
+                {
+                    "id": "longitude",
+                    "plural": "longitude",
+                    "singular": "longitude",
+                    "title": "longitude"
+                },
+                {
+                    "id": "category",
+                    "plural": "category",
+                    "singular": "category",
+                    "title": "category"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        }
+    },
+    "subtype": "map/scatter",
+    "title": "",
+    "type": "map/scatter"
+}

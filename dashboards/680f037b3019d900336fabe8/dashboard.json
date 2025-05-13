@@ -1,0 +1,36 @@
+{
+    "dataExploration": false,
+    "datasource": {
+        "fullname": "live:test1",
+        "id": "live:test1",
+        "live": true,
+        "title": "test1"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "680f037b3019d900336fabe8",
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "title": "Dash_test1",
+    "widgets": [
+        "./widgets/680f043e3019d900336fabeb/widget.json",
+        "./widgets/680f0ed53019d900336fabf0/widget.json"
+    ]
+}

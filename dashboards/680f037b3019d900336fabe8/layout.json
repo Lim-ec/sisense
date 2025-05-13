@@ -1,0 +1,66 @@
+{
+    "layout": {
+        "columns": [
+            {
+                "cells": [
+                    {
+                        "subcells": [
+                            {
+                                "elements": [
+                                    {
+                                        "defaultWidth": 512,
+                                        "height": 384,
+                                        "maxHeight": 2048,
+                                        "maxWidth": 2048,
+                                        "minHeight": 96,
+                                        "minWidth": 128,
+                                        "widgetid": "680f043e3019d900336fabeb"
+                                    }
+                                ],
+                                "index": 0,
+                                "pxlWidth": 0,
+                                "stretchable": false,
+                                "width": 100
+                            }
+                        ]
+                    },
+                    {
+                        "subcells": [
+                            {
+                                "elements": [
+                                    {
+                                        "defaultWidth": 512,
+                                        "height": 384,
+                                        "maxHeight": 2048,
+                                        "maxWidth": 2048,
+                                        "minHeight": 128,
+                                        "minWidth": 128,
+                                        "widgetid": "680f0ed53019d900336fabf0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "index": 0,
+                "pxlWidth": 0,
+                "width": 100
+            }
+        ],
+        "container": {
+            "sizzle1745814376078": {
+                "undefined": {
+                    "legend": [
+                        4085,
+                        0,
+                        false
+                    ]
+                }
+            }
+        },
+        "instanceid": "88AC5-430E-FB",
+        "type": "columnar"
+    },
+    "previewLayout": [
+    ]
+}
