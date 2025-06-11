@@ -1,0 +1,227 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "684639ae0a6e3c003364418d",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "atestXwAabtc",
+        "fullname": "localhost/test_btc",
+        "id": "localhost_atestXwAabtc",
+        "live": false,
+        "title": "test_btc"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-month.DtmTxt]",
+                            "index": 0
+                        },
+                        "instanceid": "F6DA0-2889-26",
+                        "jaql": {
+                            "column": "DtmTxt",
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-month.DtmTxt]",
+                            "table": "tcms-state-data-per-month",
+                            "title": "DtmTxt"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "categories"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-month.occurrences]_sum",
+                            "index": 2
+                        },
+                        "format": {
+                            "mask": {
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "CCA54-ACB8-A9",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "occurrences",
+                            "datatype": "numeric",
+                            "dim": "[tcms-state-data-per-month.occurrences]",
+                            "table": "tcms-state-data-per-month",
+                            "title": "Total occurrences"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-month.state]",
+                            "index": 1
+                        },
+                        "format": {
+                            "members": {
+                            }
+                        },
+                        "instanceid": "EDCED-5EAF-8B",
+                        "jaql": {
+                            "column": "state",
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-month.state]",
+                            "table": "tcms-state-data-per-month",
+                            "title": "state"
+                        },
+                        "panel": "columns"
+                    }
+                ],
+                "name": "break by"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "68463e800a6e3c0033644192",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillToAnywhere": true,
+        "previousScrollerLocation": {
+            "max": null,
+            "min": null
+        },
+        "selector": true,
+        "triggersDomready": true
+    },
+    "style": {
+        "dataLimits": {
+            "categoriesCapacity": 100000,
+            "seriesCapacity": 50
+        },
+        "legend": {
+            "enabled": true,
+            "position": "bottom"
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "dtmtxt",
+                    "plural": "DtmTxt",
+                    "singular": "DtmTxt",
+                    "title": "DtmTxt"
+                },
+                {
+                    "id": "state",
+                    "plural": "state",
+                    "singular": "state",
+                    "title": "state"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "navigator": {
+            "enabled": true
+        },
+        "seriesLabels": {
+            "enabled": true,
+            "labels": {
+                "enabled": false,
+                "stacked": false,
+                "stackedPercentage": false,
+                "types": {
+                    "count": false,
+                    "percentage": false,
+                    "relative": false,
+                    "totals": false
+                }
+            },
+            "rotation": 0
+        },
+        "xAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "isIntervalEnabled": false,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "ticks": true,
+            "title": {
+                "enabled": false
+            },
+            "x2Title": {
+                "enabled": false
+            }
+        },
+        "y2Axis": {
+            "enabled": true,
+            "gridLines": false,
+            "hideMinMax": false,
+            "inactive": true,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        },
+        "yAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "hideMinMax": false,
+            "inactive": false,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        }
+    },
+    "subtype": "column/classic",
+    "title": "월별 고장 발생 횟수",
+    "type": "chart/column"
+}

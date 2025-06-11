@@ -1,0 +1,146 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "684639ae0a6e3c003364418d",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "atestXwAabtc",
+        "fullname": "localhost/test_btc",
+        "id": "localhost_atestXwAabtc",
+        "live": false,
+        "title": "test_btc"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-data-per-dataString.readDtmText]",
+                            "index": 0
+                        },
+                        "instanceid": "5D801-FEF2-BE",
+                        "jaql": {
+                            "column": "readDtmText",
+                            "datatype": "text",
+                            "dim": "[tcms-data-per-dataString.readDtmText]",
+                            "table": "tcms-data-per-dataString",
+                            "title": "readDtmText"
+                        },
+                        "panel": "rows"
+                    },
+                    {
+                        "field": {
+                            "id": "[tcms-data-per-dataString.trainNumber]",
+                            "index": 1
+                        },
+                        "instanceid": "144FE-7016-DA",
+                        "jaql": {
+                            "column": "trainNumber",
+                            "datatype": "text",
+                            "dim": "[tcms-data-per-dataString.trainNumber]",
+                            "table": "tcms-data-per-dataString",
+                            "title": "trainNumber"
+                        },
+                        "panel": "rows"
+                    },
+                    {
+                        "field": {
+                            "id": "[tcms-data-per-dataString.state]",
+                            "index": 2
+                        },
+                        "instanceid": "33EBD-2FEF-77",
+                        "jaql": {
+                            "column": "state",
+                            "datatype": "text",
+                            "dim": "[tcms-data-per-dataString.state]",
+                            "table": "tcms-data-per-dataString",
+                            "title": "state"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "rows"
+            },
+            {
+                "items": [
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "columns"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "684643630a6e3c0033644197",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "drillToAnywhere": true,
+        "selector": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "automaticHeight": true,
+        "colors": {
+            "columns": false,
+            "headers": false,
+            "members": false,
+            "rows": true,
+            "totals": false
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "readdtmtext",
+                    "plural": "readDtmText",
+                    "singular": "readDtmText",
+                    "title": "readDtmText"
+                },
+                {
+                    "id": "trainnumber",
+                    "plural": "trainNumber",
+                    "singular": "trainNumber",
+                    "title": "trainNumber"
+                },
+                {
+                    "id": "state",
+                    "plural": "state",
+                    "singular": "state",
+                    "title": "state"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "pageSize": 10,
+        "scroll": false
+    },
+    "subtype": "pivot2",
+    "title": "전체 발생",
+    "type": "pivot2"
+}

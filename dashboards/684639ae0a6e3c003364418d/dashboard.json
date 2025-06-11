@@ -1,0 +1,39 @@
+{
+    "dataExploration": false,
+    "datasource": {
+        "address": "LocalHost",
+        "database": "atestXwAabtc",
+        "fullname": "localhost/test_btc",
+        "id": "localhost_atestXwAabtc",
+        "live": false,
+        "title": "test_btc"
+    },
+    "desc": "",
+    "filters": "./filters.json",
+    "hierarchies": [
+    ],
+    "layout": "./layout.json",
+    "oid": "684639ae0a6e3c003364418d",
+    "settings": {
+        "autoUpdateOnFiltersChange": true
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "title": "btc-dashboard",
+    "widgets": [
+        "./widgets/68463e3b0a6e3c0033644190/widget.json",
+        "./widgets/68463e800a6e3c0033644192/widget.json",
+        "./widgets/684643630a6e3c0033644197/widget.json"
+    ]
+}

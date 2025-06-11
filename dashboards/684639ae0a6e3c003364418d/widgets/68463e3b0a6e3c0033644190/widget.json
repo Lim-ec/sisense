@@ -1,0 +1,220 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "684639ae0a6e3c003364418d",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "atestXwAabtc",
+        "fullname": "localhost/test_btc",
+        "id": "localhost_atestXwAabtc",
+        "live": false,
+        "title": "test_btc"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-trainNum.trainNumber]",
+                            "index": 0
+                        },
+                        "format": {
+                        },
+                        "instanceid": "7A53B-B0B6-45",
+                        "jaql": {
+                            "column": "trainNumber",
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-trainNum.trainNumber]",
+                            "table": "tcms-state-data-per-trainNum",
+                            "title": "trainNumber"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "rows"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-trainNum.state]",
+                            "index": 3
+                        },
+                        "format": {
+                            "color": {
+                                "type": "color"
+                            },
+                            "mask": {
+                                "b": true,
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "t": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "9A825-0BCA-50",
+                        "jaql": {
+                            "agg": "count",
+                            "column": "state",
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-trainNum.state]",
+                            "table": "tcms-state-data-per-trainNum",
+                            "title": "(고장 : 1 / 정상 : 0)"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-trainNum.DtmTxt]",
+                            "index": 1
+                        },
+                        "instanceid": "B988C-DF17-02",
+                        "jaql": {
+                            "column": "DtmTxt",
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-trainNum.DtmTxt]",
+                            "table": "tcms-state-data-per-trainNum",
+                            "title": "DtmTxt"
+                        },
+                        "panel": "columns"
+                    },
+                    {
+                        "field": {
+                            "id": "[tcms-state-data-per-trainNum.state]",
+                            "index": 2
+                        },
+                        "instanceid": "88338-75B4-2C",
+                        "jaql": {
+                            "column": "state",
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-trainNum.state]",
+                            "table": "tcms-state-data-per-trainNum",
+                            "title": "state"
+                        },
+                        "panel": "columns"
+                    }
+                ],
+                "name": "columns"
+            },
+            {
+                "items": [
+                    {
+                        "instanceid": "95B73-479D-56",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "state",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "atestXwAabtc",
+                                "fullname": "localhost/test_btc",
+                                "id": "localhost_atestXwAabtc",
+                                "live": false,
+                                "title": "test_btc"
+                            },
+                            "datatype": "text",
+                            "dim": "[tcms-state-data-per-trainNum.state]",
+                            "dimension": "[tcms-state-data-per-trainNum.state]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "고장"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "locale": "ko-kr",
+                            "table": "tcms-state-data-per-trainNum",
+                            "title": "state"
+                        },
+                        "panel": "scope"
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "68463e3b0a6e3c0033644190",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "drillToAnywhere": true,
+        "selector": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "automaticHeight": true,
+        "colors": {
+            "columns": false,
+            "headers": false,
+            "members": false,
+            "rows": true,
+            "totals": false
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "trainnumber",
+                    "plural": "trainNumber",
+                    "singular": "trainNumber",
+                    "title": "trainNumber"
+                },
+                {
+                    "id": "dtmtxt",
+                    "plural": "DtmTxt",
+                    "singular": "DtmTxt",
+                    "title": "DtmTxt"
+                },
+                {
+                    "id": "state",
+                    "plural": "state",
+                    "singular": "state",
+                    "title": "state"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "pageSize": 25,
+        "scroll": false,
+        "widgetDesign": {
+            "widgetBackgroundColor": "#FFFFFF",
+            "widgetBorderColor": "#9EA2AB",
+            "widgetBorderEnabled": false,
+            "widgetCornerRadius": "none",
+            "widgetShadow": "none",
+            "widgetSpacing": "none",
+            "widgetTitleAlignment": "left",
+            "widgetTitleBackgroundColor": "#FFFFFF",
+            "widgetTitleColor": "#5B6372",
+            "widgetTitleDividerColor": "#5B6372",
+            "widgetTitleDividerEnabled": false
+        }
+    },
+    "subtype": "pivot2",
+    "title": "월별 기차별 고장 횟수",
+    "type": "pivot2"
+}
