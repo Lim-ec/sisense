@@ -21,11 +21,11 @@
                                 "index": 0,
                                 "pxlWidth": 692.99,
                                 "stretchable": false,
-                                "width": 33.333333333333336,
                                 "style": {
-                                  "margin": "0 auto",
-                                  "display": "block"
-                                }
+                                    "display": "block",
+                                    "margin": "0 auto"
+                                },
+                                "width": 33.333333333333336
                             },
                             {
                                 "elements": [
@@ -38,8 +38,8 @@
                                         "minHeight": 128,
                                         "minWidth": 128,
                                         "style": {
-                                          "margin": "0 auto",
-                                          "display": "block"
+                                            "display": "block",
+                                            "margin": "0 auto"
                                         },
                                         "widgetid": "68463e3b0a6e3c0033644190"
                                     }
@@ -47,11 +47,11 @@
                                 "index": 1,
                                 "pxlWidth": 618.042,
                                 "stretchable": false,
-                                "width": 33.333333333333336,
                                 "style": {
-                                  "margin": "0 auto",
-                                  "display": "block"
-                                }
+                                    "display": "block",
+                                    "margin": "0 auto"
+                                },
+                                "width": 33.333333333333336
                             },
                             {
                                 "elements": [
@@ -63,8 +63,8 @@
                                         "minHeight": 96,
                                         "minWidth": 128,
                                         "style": {
-                                          "margin": "0 auto",
-                                          "display": "block"
+                                            "display": "block",
+                                            "margin": "0 auto"
                                         },
                                         "widgetid": "68463e800a6e3c0033644192"
                                     }
@@ -72,11 +72,11 @@
                                 "index": 2,
                                 "pxlWidth": 692.99,
                                 "stretchable": false,
-                                "width": 33.333333333333336,
                                 "style": {
-                                  "margin": "0 auto",
-                                  "display": "block"
-                                }
+                                    "display": "block",
+                                    "margin": "0 auto"
+                                },
+                                "width": 33.333333333333336
                             }
                         ]
                     }
