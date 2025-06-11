@@ -22,8 +22,8 @@
                                 "pxlWidth": 692.99,
                                 "stretchable": false,
                                 "style": {
-                                    "display": "block",
-                                    "margin": "0 auto"
+                                    "display": "flex",
+                                    "justify-content": "center"
                                 },
                                 "width": 33.333333333333336
                             },
@@ -38,8 +38,8 @@
                                         "minHeight": 128,
                                         "minWidth": 128,
                                         "style": {
-                                            "display": "block",
-                                            "margin": "0 auto"
+                                            "display": "flex",
+                                            "justify-content": "center"
                                         },
                                         "widgetid": "68463e3b0a6e3c0033644190"
                                     }
@@ -63,8 +63,8 @@
                                         "minHeight": 96,
                                         "minWidth": 128,
                                         "style": {
-                                            "display": "block",
-                                            "margin": "0 auto"
+                                            "display": "flex",
+                                            "justify-content": "center"
                                         },
                                         "widgetid": "68463e800a6e3c0033644192"
                                     }
