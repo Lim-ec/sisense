@@ -15,7 +15,7 @@
                                         "maxWidth": 2048,
                                         "minHeight": 128,
                                         "minWidth": 128,
-                                        "margin": "0 auto"
+                                        "margin": "0 auto",
                                         "widgetid": "684643630a6e3c0033644197"
                                     }
                                 ],
@@ -34,7 +34,7 @@
                                         "maxWidth": 2048,
                                         "minHeight": 128,
                                         "minWidth": 128,
-                                        "margin": "0 auto"
+                                        "margin": "0 auto",
                                         "widgetid": "68463e3b0a6e3c0033644190"
                                     }
                                 ],
@@ -52,7 +52,7 @@
                                         "maxWidth": 2048,
                                         "minHeight": 96,
                                         "minWidth": 128,
-                                        "margin": "0 auto"
+                                        "margin": "0 auto",
                                         "widgetid": "68463e800a6e3c0033644192"
                                     }
                                 ],
