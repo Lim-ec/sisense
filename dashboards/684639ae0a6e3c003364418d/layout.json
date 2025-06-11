@@ -11,6 +11,9 @@
                                         "autoHeight": "365px",
                                         "defaultWidth": 512,
                                         "height": "612px",
+                                        "style": {
+                                            "margin": "0 auto"
+                                        },
                                         "maxHeight": 2048,
                                         "maxWidth": 2048,
                                         "minHeight": 128,
@@ -29,6 +32,9 @@
                                         "autoHeight": "315px",
                                         "defaultWidth": 512,
                                         "height": "612px",
+                                        "style": {
+                                            "margin": "0 auto"
+                                        },
                                         "maxHeight": 2048,
                                         "maxWidth": 2048,
                                         "minHeight": 128,
@@ -46,6 +52,9 @@
                                     {
                                         "defaultWidth": 512,
                                         "height": "612px",
+                                        "style": {
+                                            "margin": "0 auto"
+                                        },
                                         "maxHeight": 2048,
                                         "maxWidth": 2048,
                                         "minHeight": 96,
