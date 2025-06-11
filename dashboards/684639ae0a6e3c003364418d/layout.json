@@ -11,13 +11,13 @@
                                         "autoHeight": "365px",
                                         "defaultWidth": 512,
                                         "height": "612px",
-                                        "style": {
-                                            "margin": "0 auto"
-                                        },
                                         "maxHeight": 2048,
                                         "maxWidth": 2048,
                                         "minHeight": 128,
                                         "minWidth": 128,
+                                        "style": {
+                                            "margin": "0 auto"
+                                        },
                                         "widgetid": "684643630a6e3c0033644197"
                                     }
                                 ],
@@ -32,13 +32,13 @@
                                         "autoHeight": "315px",
                                         "defaultWidth": 512,
                                         "height": "612px",
-                                        "style": {
-                                            "margin": "0 auto"
-                                        },
                                         "maxHeight": 2048,
                                         "maxWidth": 2048,
                                         "minHeight": 128,
                                         "minWidth": 128,
+                                        "style": {
+                                            "margin": "0 auto"
+                                        },
                                         "widgetid": "68463e3b0a6e3c0033644190"
                                     }
                                 ],
@@ -52,13 +52,13 @@
                                     {
                                         "defaultWidth": 512,
                                         "height": "612px",
-                                        "style": {
-                                            "margin": "0 auto"
-                                        },
                                         "maxHeight": 2048,
                                         "maxWidth": 2048,
                                         "minHeight": 96,
                                         "minWidth": 128,
+                                        "style": {
+                                            "margin": "0 auto"
+                                        },
                                         "widgetid": "68463e800a6e3c0033644192"
                                     }
                                 ],
